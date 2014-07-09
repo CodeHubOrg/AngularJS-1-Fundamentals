@@ -1,0 +1,22 @@
+<html data-ng-app="">
+<head>
+    <title>A little Angular App</title>
+
+</head>
+<body>
+    <div class="container" data-ng-init="names=['John Smith','Jane Doe','John Doe']">
+    Name:
+    <br />
+    <input type="text" data-ng-model="name" /> {{name}}
+    <br />
+
+    <h3>Looping</h3>
+    <ul>
+        <li data-ng-repeat="personName in names">{{personName}}</li>
+    </ul>
+
+    </div>
+
+    <script src="angular.1.2.19.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>View 1</h2>
+    Name: <input type="text" data-ng-model="filter.name" />
+    <ul>
+        <li data-ng-repeat="cust in customers | filter: filter.name | orderBy: 'city'">{{cust.name}} - {{cust.city}}</li>
+    </ul>
+
+    <br />
+    Name:
+    <input type="text" data-ng-model="newCustomer.name" />
+    <br />
+    City:
+    <input type="text" data-ng-model="newCustomer.city" />
+    <br />
+    <button data-ng-click="addCustomer()">Add customer</button>
+    <br />
+    <a href="#/view2">View 2</a>
+
+</div>

@@ -1,0 +1,22 @@
+<html data-ng-app="">
+<head>
+    <title>A little Angular App</title>
+
+</head>
+<body>
+    <div class="container" data-ng-init="customers=[{name:'John Smith',city:'Phoenix'},{name:'Jane Doe', city:'New York'}, {name:'John Doe',city:'San Francisco'}]">
+    Name:
+    <br />
+    <input type="text" ng-model="name" /> {{name}}
+    <br />
+
+    <h3>Looping</h3>
+    <ul>
+        <li data-ng-repeat="cust in customers | filter:name | orderBy:'city'">{{cust.name | uppercase}} - {{ cust.city | lowercase}}</li>
+    </ul>
+
+    </div>
+
+    <script src="angular.1.2.19.js"></script>
+</body>
+</html>

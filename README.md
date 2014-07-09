@@ -1,5 +1,5 @@
-angular-workshop
-================
+Angular JS part 1 
+=================
 
 These are some simple html files, one building on top of the other, that show some fundamental concepts in creating an Angular.js app. They are almost one to one taken from the video ["AngularJS Fundamentals In 60-ish Minutes"](https://www.youtube.com/watch?v=i9MHigUZKEM) by Dan Wahlin, which is a great video to watch as an introduction. 
 
